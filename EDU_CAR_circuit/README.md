@@ -14,6 +14,6 @@
 11-D10 1 TX  BT
 13-D0 16 LED (Default)  
 
-![회로도](./smartCar/blob/main/EDU_CAR_circuit/image/carkitSCH2.PNG)  
-![PCB](./smartCar/blob/main/EDU_CAR_circuit/image/carkitPCB-cutout.png)  
-![APP](./smartCar/blob/main/EDU_CAR_circuit/image/IMG_1053.PNG) 
+![회로도](https://github.com/copaland/smartCar/blob/main/EDU_CAR_circuit/image/carkitSCH2.PNG)  
+![PCB](https://github.com/copaland/smartCar/blob/main/EDU_CAR_circuit/image/carkitPCB-cutout.png)  
+![APP](https://github.com/copaland/smartCar/blob/main/EDU_CAR_circuit/image/IMG_1053.PNG) 
