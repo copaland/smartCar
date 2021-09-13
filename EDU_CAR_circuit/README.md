@@ -1,4 +1,8 @@
-## ESP-WROOM-02 BASE
+## ESP-WROOM-02 BASE Smat Car Kit
+
+### 1.KiCad 설치 : 회로도 작성, PCB 설계
+### 2.Arduino 설치 : Firmware 프로그래밍
+### 3.MIT APP Inventor
 
 ### ESP-WROOM-02 PIN MAP
 1-A0     SENS  
