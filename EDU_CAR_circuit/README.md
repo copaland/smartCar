@@ -1,6 +1,6 @@
 ## ESP-WROOM-02 BASE
 
-#### ESP-WROOM-02 PIN MAP
+### ESP-WROOM-02 PIN MAP
 1-A0     SENS  
 2-D1   5 TRIG  
 3-D2   4 ECHO  
@@ -14,6 +14,7 @@
 11-D10 1 TX  BT
 13-D0 16 LED (Default)  
 
+### Use KiCad virsion 5.1.10 
 ![회로도](https://github.com/copaland/smartCar/blob/main/EDU_CAR_circuit/image/carkitSCH2.PNG)  
 ![PCB](https://github.com/copaland/smartCar/blob/main/EDU_CAR_circuit/image/carkitPCB-cutout.png)  
 ![APP](https://github.com/copaland/smartCar/blob/main/EDU_CAR_circuit/image/IMG_1053.PNG) 
