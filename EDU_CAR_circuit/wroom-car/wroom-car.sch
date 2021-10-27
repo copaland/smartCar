@@ -121,13 +121,13 @@ F 4 "C8020" H 6000 3800 50  0001 C CNN "LCSC"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5150 4950 5850 4950
+	5150 4950 5350 4950
 Wire Wire Line
 	5150 4750 6050 4750
 Wire Wire Line
-	5850 4950 5850 4650
+	5350 4950 5350 4650
 Wire Wire Line
-	5850 4650 6050 4650
+	5350 4650 6050 4650
 $Comp
 L power:+5V #PWR09
 U 1 1 5FFD3458
@@ -564,4 +564,166 @@ F 3 "~" H 6250 4350 50  0001 C CNN
 	1    6250 4350
 	1    0    0    -1  
 $EndComp
+Text GLabel 3750 4450 0    50   Input ~ 0
+APWM
+Text GLabel 3750 4600 0    50   Input ~ 0
+BPWM
+Wire Wire Line
+	3750 4450 3950 4450
+Wire Wire Line
+	3750 4600 3950 4600
+Wire Wire Line
+	3950 4600 3950 4550
+$Comp
+L Device:R_US R?
+U 1 1 6158AFF1
+P 3550 3900
+F 0 "R?" H 3618 3946 79  0000 L CNN
+F 1 "10K" H 3618 3855 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3590 3890 50  0001 C CNN
+F 3 "~" H 3550 3900 50  0001 C CNN
+F 4 "C17414" H 3550 3900 50  0001 C CNN "LCSC"
+	1    3550 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 6158B4A1
+P 3550 3650
+F 0 "#PWR?" H 3550 3500 50  0001 C CNN
+F 1 "+5V" H 3565 3823 50  0000 C CNN
+F 2 "" H 3550 3650 50  0001 C CNN
+F 3 "" H 3550 3650 50  0001 C CNN
+	1    3550 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 3750 3550 3650
+Wire Wire Line
+	3550 4050 3550 4250
+Wire Wire Line
+	3550 4250 3950 4250
+$Comp
+L power:GND #PWR?
+U 1 1 6178C9B0
+P 4250 5800
+F 0 "#PWR?" H 4250 5550 50  0001 C CNN
+F 1 "GND" H 4255 5627 50  0000 C CNN
+F 2 "" H 4250 5800 50  0001 C CNN
+F 3 "" H 4250 5800 50  0001 C CNN
+	1    4250 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 5650 4250 5750
+Wire Wire Line
+	4850 5650 4850 5750
+Wire Wire Line
+	4850 5750 4650 5750
+Connection ~ 4250 5750
+Wire Wire Line
+	4250 5750 4250 5800
+Wire Wire Line
+	4650 5650 4650 5750
+Connection ~ 4650 5750
+Wire Wire Line
+	4650 5750 4250 5750
+$Comp
+L Connector:Conn_01x03_Male S?
+U 1 1 61793DBF
+P 7400 2300
+F 0 "S?" H 7508 2581 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 7508 2490 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7400 2300 50  0001 C CNN
+F 3 "~" H 7400 2300 50  0001 C CNN
+	1    7400 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male S?
+U 1 1 6179532A
+P 9050 2300
+F 0 "S?" H 9158 2581 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 9158 2490 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9050 2300 50  0001 C CNN
+F 3 "~" H 9050 2300 50  0001 C CNN
+	1    9050 2300
+	1    0    0    -1  
+$EndComp
+Text GLabel 8000 2200 2    55   Input ~ 0
+LEFT
+Text GLabel 9700 2200 2    55   Input ~ 0
+RIGHT
+$Comp
+L power:GND #PWR?
+U 1 1 6179E485
+P 7800 2550
+F 0 "#PWR?" H 7800 2300 50  0001 C CNN
+F 1 "GND" H 7805 2377 50  0000 C CNN
+F 2 "" H 7800 2550 50  0001 C CNN
+F 3 "" H 7800 2550 50  0001 C CNN
+	1    7800 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6179E946
+P 9450 2550
+F 0 "#PWR?" H 9450 2300 50  0001 C CNN
+F 1 "GND" H 9455 2377 50  0000 C CNN
+F 2 "" H 9450 2550 50  0001 C CNN
+F 3 "" H 9450 2550 50  0001 C CNN
+	1    9450 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 6179EC64
+P 7850 1950
+F 0 "#PWR?" H 7850 1800 50  0001 C CNN
+F 1 "+5V" H 7865 2123 50  0000 C CNN
+F 2 "" H 7850 1950 50  0001 C CNN
+F 3 "" H 7850 1950 50  0001 C CNN
+	1    7850 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 6179F239
+P 9500 1950
+F 0 "#PWR?" H 9500 1800 50  0001 C CNN
+F 1 "+5V" H 9515 2123 50  0000 C CNN
+F 2 "" H 9500 1950 50  0001 C CNN
+F 3 "" H 9500 1950 50  0001 C CNN
+	1    9500 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 2200 8000 2200
+Wire Wire Line
+	7850 1950 7850 2400
+Wire Wire Line
+	7850 2400 7600 2400
+Wire Wire Line
+	9500 1950 9500 2400
+Wire Wire Line
+	9500 2400 9250 2400
+Wire Wire Line
+	9250 2200 9700 2200
+Wire Wire Line
+	9250 2300 9450 2300
+Wire Wire Line
+	9450 2300 9450 2550
+Wire Wire Line
+	7600 2300 7800 2300
+Wire Wire Line
+	7800 2300 7800 2550
+Wire Wire Line
+	6050 4450 5150 4450
+Wire Wire Line
+	6050 4350 5350 4350
+Wire Wire Line
+	5350 4350 5350 4250
+Wire Wire Line
+	5350 4250 5150 4250
 $EndSCHEMATC
