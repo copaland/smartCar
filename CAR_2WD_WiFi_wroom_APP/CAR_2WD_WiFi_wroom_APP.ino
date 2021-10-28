@@ -17,7 +17,6 @@ D10 RX 3 TXD BT
 */
 
 #include <ESP8266WiFi.h>
-///#include <ESP8266WebServer.h>
 #include <WiFiCar_TB6612.h>
 //#include <SoftwareSerial.h>
 
@@ -59,7 +58,7 @@ IPAddress subnet(255, 255, 255, 0); //IP for AP mode
 
 WiFiClient client; //add
 WiFiServer server(80);
-///ESP8266WebServer server(80);
+
 String data = ""; //add
 int SPEED = 0;//motor speed 1023
 
@@ -102,15 +101,7 @@ void setup() {
     Serial.print("Connected! IP: ");
     Serial.println(WiFi.localIP()); //
   }
-/*
-  // setup web server to handle specific HTTP requests
-  server.on("/", HTTP_GET, handle_OnConnect);
-  server.on("/mot1on", HTTP_GET, handle_mot1on);
-  server.on("/mot2on", HTTP_GET, handle_mot2on);
-  server.on("/mot3on", HTTP_GET, handle_mot3on);
-  server.on("/motoff", HTTP_GET, handle_motoff);
-  server.onNotFound(handle_NotFound);
-*/
+
   //start server
   server.begin();
   Serial.println("ESP8266 web server started...");
@@ -118,8 +109,6 @@ void setup() {
 
 // handle HTTP requests and arduino control 
 void loop() { 
-  //server.handleClient();   
-  //ardu_action();
   client = server.available();
   if (!client) return;
   data = checkClient();
