@@ -1,4 +1,4 @@
- ##  2WD CAR ESP 블루투스 버튼 제어 프로그램
+ ##  2WD CAR ESP WiFi 버튼 제어 프로그램
  
 Board : ESP-WROOM-02 D1  
 Driver : TB6612  
